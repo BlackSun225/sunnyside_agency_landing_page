@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+header > div {
+  width: 100%;
+  display: flex;
+  padding: 1.5em;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header > div > img {
+  width: 125px;
+}
+h1 {
+  width: 90%;
+  color: white;
+  font-family: "Fraunces", serif;
+  text-align: center;
+  font-weight: 900;
+  margin: 1em auto;
+  letter-spacing: 3px;
+}
+header > img {
+  display: block;
+  width: 15px;
+  margin: 0 auto;
+}
+section {
+  background: rgb(250, 248, 248);  
+}
+section > div {
+  width: 100%;
+  display: flex;
+}
+h2 {
+  font-size: 1.8em;
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+a {
+  text-decoration: none;
+}
+.text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: rgb(250, 248, 248);
+  padding-left: 10%;
+  padding-right: 5%;
+}
+section > div  p {
+  color: hsl(213, 9%, 39%);
+  margin: 2em 0;
+  font-weight: 500;
+}
+.text a {
+  display: inline-block;
+  padding: 0 10px;
+  color:hsl(212, 27%, 19%);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  z-index: 2;
+  position: relative;
+}
+.top .text a::after {
+  content: '';
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  background: hsla(51, 100%, 49%, 30%);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: -2;
+}
+.top .text a:hover:after {
+  background: hsl(51, 100%, 49%);
+}
+.mid .text a::after {
+  content: '';
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  background: hsla(7, 99%, 70%, 30%);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: -2;
+}
+.mid .text a:hover::after {
+  background: hsl(7, 99%, 70%);
+}
+.bottom div h3 {
+  margin: 1em 0;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(167, 40%, 24%);
+}
+section .testimonials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(250, 248, 248);
+  padding: 3em 0;
+}
+h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(232, 10%, 55%);
+  letter-spacing: 3px;
+  font-size: 0.8em;
+}
+.client img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 1em auto;
+}
+.client p {
+  font-size: 0.8em;
+  color: hsl(213, 9%, 39%);
+  font-weight: 600;
+}
+h5 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin-bottom: 0.6em;
+}
+h6 {
+  color: hsl(210, 4%, 67%);
+  font-size: 0.8em;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+}
+footer {
+  background: hsla(168, 34%, 41%, 60%);
+  padding: 2em 0;
+}
+.more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer > img {
+  display: block;
+  width: 125px;
+  margin: 0 auto;
+}
+.more a {
+  color: hsl(168, 34%, 41%);
+  font-weight: 600;
+  margin: 2em 20px;
+}
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social a {
+  display: block;
+  width: 30px;
+  margin: 0 15px;
+}
+.social a img {
+  display: block;
+  width: 100%;
+}
+.social a i {
+  font-size: 30px;
+  color: white;
+  display: none;
+}
+footer a:hover {
+  color: white;
+}
+
+@media only screen and (min-width:750px) {
+  #mob, .mob {
+    display: none;
+  }
+  main {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  header {
+    background: url('images/desktop/image-header.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    height: 500px;
+  }
+  nav a {
+    color: white;
+    font-size: 0.8em;
+    margin: 15px;
+    font-weight: 400;
+  }
+  nav a:hover {
+    color: black;
+    font-weight: 900;
+  }
+  nav a.def {
+    font-family: "Fraunces", serif;
+    color: black;
+    background: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 900;
+    margin-right: 0;
+  }
+  nav a.def:hover {
+    color: white;
+    background: rgba(255,255,255,0.3);
+  }
+ 
+  section > div > img {
+    display: block;
+    width: 50%;
+  }
+  .mid .text {
+    padding-left: 5%;
+    padding-right: 10%;
+  }
+  section .bottom > div {
+    width: 50%;
+    position: relative;
+  }
+  section .bottom > div img {
+    width: 100%;
+  }
+  section .bottom div div {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    padding-top: 4em;
+  } 
+  .bottom div p {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.85em;
+    color: hsl(167, 40%, 24%);
+    opacity: 75%;
+  }
+  .testimonials > div {
+    width: 100%;
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .client {
+    width: 31%;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 15px;
+  }
+  .pic img {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width:749px) {
+  #desk, .desk {
+    display: none;
+  }
+  main {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  header {
+    width: 100%;
+    background: url('images/mobile/image-header.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+    height: 80vh;
+  }
+  header > div {
+    padding: 1.5em 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #mob {
+    cursor: pointer;
+  }
+  #mob .menu {
+    width: 100%;
+    position: absolute;
+    display: none;
+    background: white;
+    top: calc(1.5em + 100%);
+    left: 0;
+    padding: 1.5em;
+  }
+  .menu a {
+    display: block;
+    color: hsl(232, 10%, 55%);
+    font-weight: 600;
+    margin: 1.2em auto;
+    text-align: center;
+  }
+  .menu .y {
+    width: 130px;
+    background: hsl(51, 100%, 49%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    padding: 10px 25px;
+    color: hsl(212, 27%, 19%);
+    border-radius: 30px;
+  }
+  .menu::after {
+    content: '';
+    border-width: 1.5em;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+    position: absolute;
+    right: 0;
+    top: -1.5em; 
+  }
+  section .top {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  section .mid, section .bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5.5em 20px;
+  }
+  section > div > img, .bottom img {
+    display: block;
+    width: 100%;
+  }
+  .bottom .desk {
+    display: none;
+  }
+  section .bottom div {
+    width: 100%;
+    position: relative;
+  }
+  section .bottom div div {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+    padding-top: 4em;
+    text-align: center;    
+  }
+  .bottom div p {
+    color: hsl(167, 40%, 24%);
+    font-weight: 600;
+  }
+  .testimonials > div {
+    width: 100%;
+  }
+  .client {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+  }
+  .client p {
+    width: 100%;
+    text-align: center;
+  }
+  .pic {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .pic .desk {
+    display: none;
+  }
+  .pic img {
+    display: block;
+    width: 50%;
+  }
+}
